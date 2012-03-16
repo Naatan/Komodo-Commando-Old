@@ -2,9 +2,9 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
-    <em:id>komodo-commando@naatan.com</em:id>
+    <em:id>commando@naatan.com</em:id>
     <em:name>Commando</em:name>
-    <em:version>1.0</em:version>
+    <em:version>1.0.1</em:version>
     <em:description></em:description>
 	<em:iconURL>chrome://commando/skin/icon.png</em:iconURL>
     <em:creator>Nathan Rijksen</em:creator>
