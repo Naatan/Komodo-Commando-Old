@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+		title="Invoke Command"
+		id="commando"
+		minwidth="200" minheight="200"
+		persist="width height"
+		onload="commando.onLoad();"
+		>
+
+    <script type="application/x-javascript"	
+            src="chrome://commando/content/commando.js"/>
+	
+	<vbox flex="1">
+		<textbox id="commando-search" oninput="commando.onInput(this);" onkeypress="commando.onKeyPress(event);"/>
+		<listbox id="commando-results" flex="1" ondblclick="commando.onSelect(event);"/>
+	</vbox>
+</window>

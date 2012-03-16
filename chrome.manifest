@@ -1,0 +1,2 @@
+content commando chrome/content/
+overlay chrome://komodo/content/komodo.xul chrome://commando/content/overlay.xul

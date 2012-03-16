@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    
+<overlay id="commandoOverlay"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+    <script type="application/x-javascript"
+            src="chrome://commando/content/overlay.js"/>
+    
+    <broadcasterset id="broadcasterset_global">
+      <broadcaster id="cmd_commando_show"
+                   key="key_cmd_commando_show"
+                   desc="Commando"
+                   oncommand="showCommandoDialog(event)"/>
+    </broadcasterset>
+</overlay>
