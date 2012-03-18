@@ -13,6 +13,14 @@
       <broadcaster id="cmd_commando_show"
                    key="key_cmd_commando_show"
                    desc="Commando"
-                   oncommand="showCommandoDialog(event)"/>
+                   oncommand="showCommandoDialog()"/>
     </broadcasterset>
+	
+	<commandset id="allcommands">
+		<command id="commando_command" oncommand="showCommandoDialog()"/>
+	</commandset>
+	
+	<menupopup id="popup_tools">
+		<menuitem id="commando_menuitem" label="Invoke Command" observes="commando_command"/>
+	</menupopup>
 </overlay>
