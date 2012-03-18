@@ -1,2 +1,5 @@
-content commando chrome/content/
-overlay chrome://komodo/content/komodo.xul chrome://commando/content/overlay.xul
+content		commando																						content/
+
+skin		commando								default													skin/
+
+overlay		chrome://komodo/content/komodo.xul		chrome://commando/content/overlay.xul

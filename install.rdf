@@ -4,13 +4,12 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>commando@naatan.com</em:id>
     <em:name>Commando</em:name>
-    <em:version>1.0.1</em:version>
+    <em:version>1.1</em:version>
     <em:description></em:description>
-	<em:iconURL>chrome://commando/skin/icon.png</em:iconURL>
     <em:creator>Nathan Rijksen</em:creator>
     <em:homepageURL>https://github.com/Naatan/Komodo-Commando</em:homepageURL>
+	<em:iconURL>chrome://commando/skin/icon.png</em:iconURL>
     <em:type>2</em:type> <!-- type=extension --> 
-    <em:unpack>true</em:unpack>
 
     <em:targetApplication> <!-- Komodo IDE -->
       <Description>
