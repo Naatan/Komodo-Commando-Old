@@ -12,8 +12,24 @@ commando = new function()
 	
 	this.onLoad = function()
 	{
+		if (mainWindow._commando !== undefined)
+		{
+			this.loadCommands(mainWindow._commando.input);
+			
+			document.getElementById("commando-search").value = mainWindow._commando.input;
+			
+			setTimeout(function() {
+				var list = document.getElementById('commando-results');
+				list.selectItem(list.getItemAtIndex(mainWindow._commando.selectedIndex));
+			},50);
+		}
+		else
+		{
+			this.loadCommands();
+		}
+		
 		document.getElementById("commando-search").focus();
-		this.loadCommands();
+		document.getElementById("commando-search").select();
 		window.addEventListener('keypress', $this.onKeyPressWindow, true);
 	};
 	
@@ -56,6 +72,9 @@ commando = new function()
 				e.stopPropagation();
 				break;
 		}
+		
+		var input = document.getElementById("commando-search").value;
+		mainWindow._commando = {input: input, selectedIndex: list.selectedIndex};
 	};
 	
 	this.onKeyPress = function(e)
