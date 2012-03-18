@@ -65,7 +65,8 @@ commando = new function()
 	
 	this.onSelect = function()
 	{
-		
+		setTimeout(window.close, 50);
+		$this.runSelected();
 	};
 	
 	this.runSelected = function()
