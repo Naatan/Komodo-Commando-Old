@@ -12,7 +12,7 @@
     <broadcasterset id="broadcasterset_global">
       <broadcaster id="cmd_commando_show"
                    key="key_cmd_commando_show"
-                   desc="Commando"
+                   desc="Commando: Invoke Command"
                    oncommand="showCommandoDialog()"/>
     </broadcasterset>
 	
